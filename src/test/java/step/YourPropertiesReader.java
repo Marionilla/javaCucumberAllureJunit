@@ -16,8 +16,8 @@ public class YourPropertiesReader {
     public static String getUrl() {
         return properties.getProperty("url");
     }
-    public String getPropertyValue(String scenarioName, String propertyName) {
-       // String key = scenarioName + "." + propertyName;
-        return properties.getProperty(propertyName);
-    }
+//    public String getPropertyValue(String scenarioName, String propertyName) {
+//       // String key = scenarioName + "." + propertyName;
+//        return properties.getProperty(propertyName);
+   // }
 }

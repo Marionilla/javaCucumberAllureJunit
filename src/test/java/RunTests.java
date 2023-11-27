@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/resources/test.feature"},
+        features = {"src/test/resources"},
         glue = "step",
         // plugin = "json:target/cucumber.json"
          plugin = {"pretty", "html:target/cucumber-reports"}
@@ -31,6 +31,14 @@ public class RunTests {
 //        }
 //
 //        executorService.shutdown();
+
+//           <configuration>
+//                            <jsonFiles>
+//                                <param>**/cucumber.json</param>
+//                            </jsonFiles>
+//                            <projectName>MyTestAutomationWork21</projectName>
+//                            <outputDirectory>${project.build.directory}/test-classes</outputDirectory>
+//                        </configuration>
 
     }
 }

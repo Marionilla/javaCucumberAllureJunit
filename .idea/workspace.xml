@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b29a878e-ef5a-472b-9842-fd20a9c5d3b1" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/step/RestApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step/SwaggerApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/swagger.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RunTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RunTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step/YourPropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step/YourPropertiesReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -67,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700603019327</updated>
       <workItem from="1700603021202" duration="35648000" />
-      <workItem from="1700747145918" duration="6086000" />
+      <workItem from="1700747145918" duration="13979000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -85,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700859604919</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1700860352598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700860352598</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
