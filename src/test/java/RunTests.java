@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/test/resources"},
+        features = {"src/test/resources/test.feature", "src/test/resources/swagger.feature"},
         glue = "step",
         // plugin = "json:target/cucumber.json"
          plugin = {"pretty", "html:target/cucumber-reports"}

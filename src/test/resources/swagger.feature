@@ -1,8 +1,15 @@
 
-Feature: Testing Petstore API
+Feature: Testing API
 
-  Scenario: Retrieving user information
-    Given the user has access to the Petstore API
-    When the user sends a GET request to retrieve information about the user with identifier "mmm"
-    Then the server should return status code 200
-    And the response should contain the username "mmm"
+  Scenario: Creating, updating, and deleting a user
+    Given the user has access to the API
+
+  When the user sends a POST request to create a new user with the name "mmm"
+  Then the response should contain the username "mmm"
+
+    When the user sends a PUT request to update the information about the user "mmm" with the new name "mmm_updated"
+    Then the response should contain the updated username "mmm_updated"
+
+  When the user sends a DELETE request to delete the user with the name "mmm_updated"
+  Then the response should not contain the username "mmm_updated"
+

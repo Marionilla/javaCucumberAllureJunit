@@ -1,25 +1,27 @@
 package step;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-
+import static org.junit.Assert.assertTrue;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
-public class SwaggerApi {
+import static org.junit.Assert.assertFalse;
 
+public class SwaggerApi {
+    private String userId;
     private Response response;
-    private String createdUserName;
-    @Given("the user has access to the Petstore API")
-    public void userHasAccessToPetstoreAPI() {
+
+    @Given("the user has access to the API")
+    public void userHasAccessToAPI() {
 
           RestAssured.baseURI = "https://petstore.swagger.io/v2";
     }
 
-    @When("the user sends a GET request to retrieve information about the user with identifier {string}")
-    public void userSendsGetRequest(String userName) {
-        createdUserName = userName;
+    @When("the user sends a POST request to create a new user with the name {string}")
+    public void userSendsPostRequest(String userName) {
         response = given()
                 .log().all()
                 .contentType("application/json")
@@ -29,21 +31,56 @@ public class SwaggerApi {
                 .when()
                 .post("/user/createWithArray");
 
-//        response = given()
-//                .log().all() // логування всіх деталей запиту
-//                .when()
-//                .get("/user/" + userName);
-    }
+        assertEquals(200, response.getStatusCode());
 
-    @Then("the server should return status code {int}")
-    public void serverShouldReturnStatusCode(int expectedStatusCode) {
-        int actualStatusCode = response.getStatusCode();
-        assertEquals(expectedStatusCode, actualStatusCode);
+//        // Assume that the API returns the user ID in the response
+//        userId = response.getBody().asString();
     }
-
     @Then("the response should contain the username {string}")
-    public void responseShouldContainUserName(String expectedUserName) {
-        String actualUserName = response.jsonPath().getString("username");
-        assertEquals(expectedUserName, actualUserName);
+    public void andTheResponseShouldContainUsername(String expectedName) {
+        Response response = given()
+                .when()
+                .get("/user/" + expectedName);
+
+        assertEquals(200, response.getStatusCode());
+        assertTrue(response.getBody().asString().contains(expectedName));
     }
+    @When("the user sends a PUT request to update the information about the user {string} with the new name {string}")
+    public void userUpdatesUser(String oldUserName, String newUserName) {
+        response = given()
+                .log().all()
+                .contentType("application/json")
+                .body("{ \"username\": \"" + newUserName + "\", \"id\": 0, \"email\": \"test@gmail.com\", \"phone\": \"1234567890\", \"userStatus\": 0 }")
+                .when()
+                .put("/user/" + oldUserName);
+        assertEquals(200, response.getStatusCode());
+    }
+    @Then("the response should contain the updated username {string}")
+    public void andTheResponseShouldContainUpdatedUsername(String updatedName) {
+        Response response = given()
+                .when()
+                .get("/user/" + updatedName);
+
+        assertEquals(200, response.getStatusCode());
+        assertTrue(response.getBody().asString().contains(updatedName));
+    }
+    @When("the user sends a DELETE request to delete the user with the name {string}")
+    public void userDeletesUser(String userName) {
+        response = given()
+                .log().all()
+                .when()
+                .delete("/user/" + userName);
+        assertEquals(204, response.getStatusCode());
+    }
+    @Then("the response should not contain the username {string}")
+    public void andTheResponseShouldNotContainUsername(String deletedName) {
+        Response response = given()
+                .when()
+                .get("/user/" + deletedName);
+
+        assertEquals(404, response.getStatusCode());
+        assertFalse(response.getBody().asString().contains(deletedName));
+    }
+
+
 }
