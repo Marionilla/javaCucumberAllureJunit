@@ -2,7 +2,7 @@
 Feature: Testing API
 
   Scenario: Creating, updating, and deleting a user
-    Given the user has access to the API
+
 
   When the user sends a POST request to create a new user with the name "mmm"
   Then the response should contain the username "mmm"

@@ -5,6 +5,8 @@ import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.junit.Before;
+
 import static org.junit.Assert.assertTrue;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -14,10 +16,10 @@ public class SwaggerApi {
     private String userId;
     private Response response;
 
-    @Given("the user has access to the API")
+    @Before
     public void userHasAccessToAPI() {
 
-          RestAssured.baseURI = "https://petstore.swagger.io/v2";
+          RestAssured.baseURI = "https://petstore.swagger.io/v2/swagger.json";
     }
 
     @When("the user sends a POST request to create a new user with the name {string}")
