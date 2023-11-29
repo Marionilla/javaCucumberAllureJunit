@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29a878e-ef5a-472b-9842-fd20a9c5d3b1" name="Changes" comment="29">
+    <list default="true" id="b29a878e-ef5a-472b-9842-fd20a9c5d3b1" name="Changes" comment="RestAssured: Post,Get,Put,Delete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/step/SwaggerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step/SwaggerApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/swagger.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/swagger.feature" afterDir="false" />
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701258243469</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="RestAssured: Post,Get,Put,Delete">
+      <created>1701261502836</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701261502836</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +161,8 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="swagger get request" />
     <MESSAGE value="29" />
-    <option name="LAST_COMMIT_MESSAGE" value="29" />
+    <MESSAGE value="RestAssured: Post,Get,Put,Delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="RestAssured: Post,Get,Put,Delete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

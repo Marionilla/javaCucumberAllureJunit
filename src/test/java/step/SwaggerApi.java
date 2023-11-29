@@ -16,10 +16,10 @@ public class SwaggerApi {
     private String userId;
     private Response response;
 
-    @Before
+   @Given("the user has access to the API")
     public void userHasAccessToAPI() {
 
-          RestAssured.baseURI = "https://petstore.swagger.io/v2/swagger.json";
+          RestAssured.baseURI = "https://petstore.swagger.io/v2";
     }
 
     @When("the user sends a POST request to create a new user with the name {string}")
@@ -32,7 +32,7 @@ public class SwaggerApi {
                         "\"phone\": \"1234567890\", \"userStatus\": 0 }")
                 .when()
                 .post("/user/createWithArray");
-
+        response.prettyPrint();
         assertEquals(200, response.getStatusCode());
 
 //        // Assume that the API returns the user ID in the response
