@@ -39,14 +39,27 @@ public class SwaggerApi {
 //        "\"lastName\": \"mykhailova\", \"email\": \"test@gmail.com\", \"password\": \"111\", " +
 //        "\"phone\": \"1234567890\", \"userStatus\": 0 }";
      //   System.out.println("Request Body: " + requestBody);
-        response = RestAssured.given()
-                .log().all()
+
+
+        given()
                 .contentType("application/json")
-                //.body(requestBody)
+                .body("{ \"id\": 0, \"username\": \"" + userName + "\", \"firstName\": \"maryna\"," +
+        "\"lastName\": \"mykhailova\", \"email\": \"test@gmail.com\", \"password\": \"111\", " +
+        "\"phone\": \"1234567890\", \"userStatus\": 0 }")
                 .when()
-                .post("/user/createWithList");
-        response.prettyPrint();
-        assertEquals(200, response.getStatusCode());
+                .post("/user/createWithList")
+                .then()
+                .statusCode(200);
+//
+//
+//        response = RestAssured.given()
+//                .log().all()
+//                .contentType("application/json")
+//                //.body(requestBody)
+//                .when()
+//                .post("/user/createWithList");
+//        response.prettyPrint();
+//        assertEquals(200, response.getStatusCode());
 
 //        // Assume that the API returns the user ID in the response
 //        userId = response.getBody().asString();

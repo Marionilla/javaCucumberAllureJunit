@@ -7,7 +7,6 @@
     <list default="true" id="b29a878e-ef5a-472b-9842-fd20a9c5d3b1" name="Changes" comment="RestAssured: Post,Get,Put,Delete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/step/SwaggerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step/SwaggerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/swagger.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/swagger.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701265872585</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="RestAssured: Post,Get,Put,Delete">
+      <created>1701418008997</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701418008997</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
