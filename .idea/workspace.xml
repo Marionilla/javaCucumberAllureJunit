@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29a878e-ef5a-472b-9842-fd20a9c5d3b1" name="Changes" comment="RestAssured: Post,Get,Put,Delete">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/CucumberContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/ParallelCucumberTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/RunMyTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/driver/SingletonDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/resources/stateTransitionTesting.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/step/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/tests/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/tests/StateTransitionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/DriverFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/FirstScenarioPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/RestApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/SwaggerApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step/YourPropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/config/YourPropertiesReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/swagger.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/resources/test.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucedemo/proj/config/test.properties" afterDir="false" />
-    </list>
+    <list default="true" id="b29a878e-ef5a-472b-9842-fd20a9c5d3b1" name="Changes" comment="ui automation testing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701420992082</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ui automation testing">
+      <created>1705920339457</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705920339457</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +215,8 @@
     <MESSAGE value="swagger get request" />
     <MESSAGE value="29" />
     <MESSAGE value="RestAssured: Post,Get,Put,Delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestAssured: Post,Get,Put,Delete" />
+    <MESSAGE value="ui automation testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui automation testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
